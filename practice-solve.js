@@ -153,5 +153,41 @@ const myAverage = getAverage(60,58,60);
 console.log(myAverage);
 
 
+// Problem-13: write js code with find  a largest number in an Arry
+
+function maxInArry(numbers){
+    let largest = numbers[0];
+    for(let i = 0; i < numbers.length; i++){
+        const index = i;
+        const element = numbers[index];
+        if(element > largest){
+            largest = element;
+        }
+    }
+    return largest;
+}
+const height = [128, 150, 195, 124, 175];
+const tallest = maxInArry(height);
+console.log('tallest person is :', tallest)
+
+
+// Problem-14: write js code with find  a smallest number in an Arry
+
+function minInArry(allNumber){
+    let smallest = allNumber[0];
+    for (let i = 0; i < allNumber.length; i++){
+        const position = i;
+        const elementMain = allNumber[position];
+        if(elementMain < smallest){
+            smallest = elementMain;
+        }
+    }
+    return smallest;
+}
+const heightArry = [167,190,120,165,137,100];
+const shortest = minInArry(heightArry);
+console.log('Smallest number : ', shortest);
+
+
 
 
